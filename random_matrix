@@ -1,24 +1,27 @@
 #include<iostream>
-#include<stdlib>
+#include<stdlib.h>
+#include<time.h>
 
 int main(){
   int matrix[3][3];
   int fil, col;
   int num;
   int salir;
+  int semilla = time(0);
+  srand (semilla);
   for(fil=0;fil<3;fil++){
     for(col=0;col<3;col++){
-      num=rand();
+      num=rand()%2;
+      matrix[fil][col]=num;
       std::cout<<num<<"  ";
-      //matrix[fil][col]=num;
+      
     
-    
-  
+   
     }
   }
 
-std::cin>> salir;
-return 0;
+   std::cin>> salir;
+   return 0;
 
 
 
