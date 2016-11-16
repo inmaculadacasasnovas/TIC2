@@ -9,7 +9,7 @@ int main(){
   for(fil=0;fil<3;fil++){
     for(col=0;col<3;col++){
       num=rand();
-      std::cour<<num<<"  ";
+      std::cout<<num<<"  ";
       //matrix[fil][col]=num;
     
     
