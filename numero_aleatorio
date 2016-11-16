@@ -1,0 +1,16 @@
+#include<iostream>
+#include<stdlib.h>
+#include<time.h>
+int main(){
+    int i;
+    int numero;
+    int salir;
+    int semilla = time(0);
+    srand(semilla);
+    for (i=1;i<10;i++){
+        numero=rand()%10+1;
+        std::cout<< numero<<" ";
+        }
+    std::cin>> salir;
+    return 0;
+}
