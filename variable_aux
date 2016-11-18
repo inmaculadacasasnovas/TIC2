@@ -1,0 +1,19 @@
+#include <iostream>
+int x;
+int y;
+int aux;
+int salir;
+int main(){
+    std::cout<< "Dime un numero";
+    std::cin>> x;
+    std::cout<< "Dime otro numerico";
+    std::cin>> y;
+    aux=x;
+    x=y;
+    y=aux;
+    std::cout<< "x vale";
+    std::cout<< x;
+    std::cout<< "\ny vale";
+    std::cout<< y;
+    std::cin>> salir;
+}
