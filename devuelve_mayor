@@ -1,0 +1,22 @@
+#include <iostream>
+int devuelvemayor (int a, int b){
+    int resp;
+    if (a>b){
+             resp=a;
+             }
+    else{
+         resp=b;
+         }
+    return resp;    
+}
+int main(){
+    int a,b;
+    int x;
+    std::cout<<"Dime un numero";
+    std::cin>>a;
+    std::cout<<"Dime otro numero";
+    std::cin>>b;
+    std::cout<< devuelvemayor(a,b);
+    std::cin>>x;
+    return 0;
+}
