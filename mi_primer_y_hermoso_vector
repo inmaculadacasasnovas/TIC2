@@ -1,0 +1,15 @@
+#include<iostream>
+
+int main(){
+    int coord[4]={3,5,4,8};
+    int cont;
+    int salir;
+    for(cont=0;cont<4;cont=cont+1){
+          std::cout<< coord[cont];
+          
+          
+          }
+    std::cin>> salir;
+    
+    return 0;
+}
