@@ -1,0 +1,12 @@
+#include<iostream>
+int main(){
+    int cont;
+    int lista[5]= {1,5,7,2,4};
+    int salir;
+    for (cont=0;cont<5;cont++){
+        std::cout<< lista[cont];
+    }
+    std::cin>>salir;
+    return 0;
+    
+}
