@@ -1,0 +1,43 @@
+#include<iostream>
+int media;
+media(lista[cont]){
+              float resultado;
+              resultado=(lista[cont])/2.0;
+              return resultado;
+              }
+int main(){
+    int cont;
+    int lista[5];
+    int salir;
+    int menor;
+    int mayor;
+    for(cont=0;cont<5;cont++){
+                              std::cout<< "Dame un numero";
+                              std::cin>> lista[cont];
+    }
+    menor=lista[0];
+    mayor=lista[0];
+    for(cont=0;cont<5;cont++){
+                              std::cout<< "Has introducido";
+                              std::cout<< lista [cont];
+                              if(lista[cont]<menor){
+                                 menor=lista[cont];
+                              }
+                              if(lista[cont]>mayor){
+                                 mayor=lista[cont];
+                              }
+    }
+                              
+    std::cout<< "La media vale";
+    std::cout<< media;
+    std::cout<< "El menor es";
+    std::cout<< menor;
+    std::cout<< "El mayor es";
+    std::cput<< mayor;
+                            
+                                          
+    std::cin>>salir;
+    return 0;
+    
+
+}
