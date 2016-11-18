@@ -1,0 +1,22 @@
+#include<iostream>
+int main(){
+    int cont=1;
+    int x;
+    int menor;
+    int salir;
+    do{
+       std::cout<<"Dime un numero";
+       std::cin>> x;
+       if (x<menor){
+                    menor=x;
+                    }
+       cont = cont+1;       
+       }
+    while (cont<=10);                   
+
+    std::cout<<"El menor es"; 
+    std::cout<< menor;
+    std::cin>> salir;
+    return 0;
+                    
+}
