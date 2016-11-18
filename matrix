@@ -1,0 +1,23 @@
+#include<iostream>
+int main{
+    int fil;
+    int col;
+    int salir;
+    int matrix[3][3];
+    for (fil=0;fil<3;fil++){
+        for (col=0;col<3;col++){
+            std::cout<<"Elemento"<<fil<<","<<col<<;
+            std::cin matrix[fil][col];
+            
+                               
+                               }
+    }
+    for (fil=0;fil<3;fil++){
+        for (col=0;col<3;col++){
+            std::cout<<matrix[3][3];
+            }
+    }
+
+    std::cin>> salir;
+    return 0;
+}
