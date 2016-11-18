@@ -1,0 +1,14 @@
+#include<iostream>
+int main(){
+    int cont;
+    int lista[5];
+    int salir;
+    for(cont=0;cont<5;cont++){
+                              std::cout<< "Dame un numero";
+                              std::cin>> lista [cont];
+    }
+    std::cin>>salir;
+    return 0;
+    
+
+}
