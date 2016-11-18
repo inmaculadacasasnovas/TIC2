@@ -1,0 +1,15 @@
+#include<iostream>
+int main(){
+    int numero;
+    int cont
+    std::cout << "Dime un numero";
+    std::cin >> numero;
+    for(cont=1;cont<=10;cont=cont+1){
+      std::cout <<                                      
+                                     }
+                                 
+  
+       return 0;
+       
+       
+}
