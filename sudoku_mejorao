@@ -1,0 +1,54 @@
+#include<iostream>
+#include<stdlib.h>
+#include<time.h>
+//Refactorizar: rehacer un código para que haga lo mismo pero de manera más óptima
+//Como el programa es muy largo, vamos a intentar externalizar la parte que evalúa si está repetido o no
+char esta_repetido(int num, int matrix[][3]){ //Para mandar una matriz se pone el corchete vacío y el otro con el corchete y una dimensión
+                char sirve='s';
+                int fil2,col2;
+                for(fil2=0;fil2<3;fil2++)
+                     for(col2=0;col2<3;col2++)
+                         if(num==matrix[fil2][col2]) //Si el número que acabo de generar es el número que está en fil2 col2 no me vale
+                         //Tengo que volver arriba para que genere otro número
+                         //Para ello uso la variable interruptora sirve para decirle que vuelva
+                         //Cierro estos for y ahora tengo que decidir si continúo no
+                              sirve='n';
+                              
+                return sirve; //Lo que me devuelve es si sirve o no
+                         }
+//Podemos hacer más funciones para comprobar si sale algún número en concreto
+ char compruebo_sale_3(int num){
+      char sirve = 's';
+      if (num==3)sirve='n';
+      return sirve;
+      
+      
+      }
+
+int main(){
+    int fil,col;
+    int num,salir; 
+    int matrix[3][3];
+    srand(time(0));
+    char sirve;
+    for(fil=0;fil<3;fil++){
+          for(col=0;col<3;col++){
+              
+              do{
+           
+                num=rand()%9+1;
+                 //comparador
+                 
+              }while(esta_repetido(num,matrix)=='n' && compruebo_sale_3(num)=='n'); //Esto es una contradicción, porque si tienen que ser 9 números sin repetir no le puedo decir que uno de ellos no puede estar
+              matrix[fil][col]=num; //Si encontramos un número que se repite entramos en el if, sirve vale n
+             
+              std::cout<<matrix[fil][col];
+          } 
+          std::cout<<"\n";          
+    }
+    std::cin>> salir;
+    return 0;
+    
+     
+}
+
