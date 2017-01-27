@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int x;
+    x=18;
+    printf("Introduce x")
+    scanf("la variable%d", &x); //leer un número entero, guardarlo en la dirección de memoria de x
+    printf("%d", x);
+    
+return 0;
+}
