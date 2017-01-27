@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int a;
+    int *pa;
+    a=2;
+    pa= &a; //&--> dirección de a. El puntero pa apunta a "a".
+    printf("pa=%x", pa); 
+
+getchar();
+getchar();
+}
