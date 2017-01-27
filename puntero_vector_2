@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int lista[3];
+    lista[0]=3;
+    lista[1]=2;
+    lista[2]=1;
+    printf("%d", *lista+1);
+    
+    
+}
