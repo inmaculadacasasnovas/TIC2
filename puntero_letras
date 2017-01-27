@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    char letra;
+    char letra_2;
+    letra= 'I';
+    printf("letra=%x", &letra); //%x --> direcciones de memoria. & --> sacar dirección del puntero
+    printf("letra_2=%x", &letra_2); //los 2 punteros están separados por 1 byte= 8 bits (2 códigos de 4 --> tabla ASCIT)
+    getchar();
+    getchar();
+}
