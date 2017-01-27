@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+    struct punto{
+           int x; 
+           int y; //cada dato se llama campo
+           };
+    int cont;
+    int salir;
+    punto triangulo1[3]; //array de puntos
+    for(cont=0;cont<3;cont++){
+        cout<< "Dime la coordenada x";
+        cin>> triangulo1[cont].x; //este arrays es como una tabla formada por los campos x e y
+        cout<< "Dime la coordenada y";
+        cin>> triangulo1[cont].y;
+        }
+    for (cont=0;cont<3;cont++){
+        cout<<"Coord vertice" << (cont+1);
+        cout<< "x="<<triangulo1[cont].x; 
+        cout<< "y="<<triangulo1[cont].y;
+        }
+    cin>>salir;
+    return 0;
+    
+}
