@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int lista[3];
+    lista[0]=3;
+    lista[1]=2;
+    lista[2]=1;
+    printf("lista[0]=%d", lista[0]); 
+    printf("\n lista[0]=%x", &lista[0]);
+    printf("\n lista[1]=%d", lista[1]); 
+    printf("\n lista[1]=%x", &lista[1]);
+    printf("\n lista[2]=%d", lista[2]); 
+    printf("\n lista[2]=%x", &lista[2]);
+                
+    getchar();
+    getchar();
+}
